@@ -37,7 +37,7 @@ unit-test-job:   # This job runs in the test stage.
     - echo "Code coverage is 90%"
 
 docker build:
-  image: https://gitlab.com/Kazitsyn/javacoregb/-/raw/master/lesson1/src/main/Dockerfile?ref_type=heads
+  image: https://gitlab.com/Kazitsyn/javacoregb/-/tree/master/lesson1/src/main?ref_type=heads
   stage: build
   services:
     - docker:dind
@@ -48,7 +48,7 @@ docker build:
     - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
 
 test2:
-  image: docker:latest
+  image: https://gitlab.com/Kazitsyn/javacoregb/-/tree/master/lesson1/src/main?ref_type=heads
   stage: test
   services:
     - docker:dind
