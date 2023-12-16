@@ -19,7 +19,7 @@
 image: busybox:latest
 
 include:
-  - local: testfile.gotlab-ci.yml
+  - local: lesson1/src/main/javacore.gitlab-ci.yml
 
 
 stages:          # List of stages for jobs, and their order of execution
