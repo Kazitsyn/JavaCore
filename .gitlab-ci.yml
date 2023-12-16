@@ -18,10 +18,16 @@
 
 image: busybox:latest
 
+
+
+
 stages:          # List of stages for jobs, and their order of execution
   - build
   - test
   - deploy
+
+include:
+  - local: 'lesson1/src/main/.gitlab-javacore.yml'
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
@@ -36,28 +42,7 @@ unit-test-job:   # This job runs in the test stage.
     - sleep 60
     - echo "Code coverage is 90%"
 
-docker build:
-  image: docker:latest
-  stage: build
-  services:
-    - docker:dind
-  script:
-    - docker login -u $GITLAB_CI_USER -p $GITLAB_CI_PASSWORD $CI_REGISTRY
-    - echo $GITLAB_CI_USER $GITLAB_CI_PASSWORD $CI_REGISTRY $CI_REGISTRY_IMAGE:$IMAGE_TAG
-    - docker build -t $CI_REGISTRY_IMAGE:$IMAGE_TAG .
-    - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
 
-test2:
-  image: docker:latest
-  stage: test
-  services:
-    - docker:dind
-  script:
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
-    - docker run $CI_REGISTRY_IMAGE:$IMAGE_TAG
-    - docker ps
-    - echo "----------TEST DOCKER IMAGE--------"
 
 
 lint-test-job:   # This job also runs in the test stage.
