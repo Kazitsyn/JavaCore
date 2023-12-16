@@ -21,14 +21,9 @@ docker build:
     - docker build -t $CI_REGISTRY_IMAGE:$IMAGE_TAG .
     - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
 
-test2:
+javaCore-Homework-1:
   image: docker:latest
   stage: test
-  services:
-    - docker:dind
   script:
-    - echo "Do another parallel test here"
-    - echo "For example run a lint test"
     - docker run $CI_REGISTRY_IMAGE:$IMAGE_TAG
-    - docker ps
-    - echo "----------TEST DOCKER IMAGE--------"
+
