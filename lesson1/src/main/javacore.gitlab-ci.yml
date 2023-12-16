@@ -24,6 +24,8 @@ docker build:
 javaCore-Homework-1:
   image: docker:latest
   stage: test
+  services:
+    - docker:dind
   script:
     - docker run $CI_REGISTRY_IMAGE:$IMAGE_TAG
 
