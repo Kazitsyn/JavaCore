@@ -18,14 +18,16 @@
 
 image: busybox:latest
 
-include:
-  - local: lesson1/src/main/javacore.gitlab-ci.yml
+
 
 
 stages:          # List of stages for jobs, and their order of execution
   - build
   - test
   - deploy
+
+include:
+  - local: 'lesson1/src/main/javacore.gitlab-ci.yml'
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
