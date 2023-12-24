@@ -1,5 +1,8 @@
 package ru.geekbrains.homework3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) {
         Freelancer programmer = new Freelancer("Matvei", 35, 1);
@@ -11,12 +14,17 @@ public class App {
         System.out.println(programmer.salary());
         System.out.println(staffer.salary());
 
-        Worker arrWorker[] = new Worker[2];
-        arrWorker[0] = programmer;
-        arrWorker[1] = staffer;
+        List<Worker> workerList = new ArrayList<>();
+        workerList.add(programmer);
+        workerList.add(staffer);
 
-        System.out.println(arrWorker[0].toString());
-        System.out.println(arrWorker[1].toString());
+        WorkerGroupIterator workerGroup = new WorkerGroupIterator(workerList);
+
+        for (WorkerGroupIterator it = workerGroup; it.hasNext(); ) {
+            Worker item = it.next();
+            System.out.println(item);
+        }
+
 
 
     }

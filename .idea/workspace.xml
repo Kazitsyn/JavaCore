@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a41e2c6-f316-47d1-88bc-f48aa793cf3a" name="Changes" comment="hw2">
+    <list default="true" id="9a41e2c6-f316-47d1-88bc-f48aa793cf3a" name="Changes" comment="hw3+">
+      <change afterPath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/WorkerGroupIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaCore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/src/main/.gitlab-javacore.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/Freelancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/Freelancer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/src/main/java/ru/geekbrains/homework3/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Администратор/Documents/JavaCore",
+    "last_opened_file_path": "C:/Users/Администратор/Documents/JavaCore/lesson3",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
@@ -78,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703090745576</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hw3">
+      <created>1703427760796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703427760796</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hw3+">
+      <created>1703427867243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703427867243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -87,6 +107,8 @@
     <MESSAGE value="ymlik" />
     <MESSAGE value="hw1" />
     <MESSAGE value="hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
+    <MESSAGE value="hw3" />
+    <MESSAGE value="hw3+" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw3+" />
   </component>
 </project>
